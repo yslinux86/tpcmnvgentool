@@ -3,6 +3,7 @@ CC      = gcc
 INCLUDE = -I/usr/include/gtk-3.0 \
           -I/usr/include/glib-2.0 \
           -I/usr/lib/$(shell uname -i)-linux-gnu/glib-2.0/include \
+          -I/usr/lib64/glib-2.0/include \
           -I/usr/include/pango-1.0 \
           -I/usr/include/harfbuzz \
           -I/usr/include/cairo \
@@ -19,7 +20,7 @@ CFLAGS  += -g -fno-strict-aliasing -Werror
 OBJECTS = common.o \
           policy_tool.o
 
-TARGET = policy_tool
+TARGET = TpcmNvGenerationTool
 
 all: $(TARGET)
 

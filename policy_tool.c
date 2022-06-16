@@ -214,7 +214,9 @@ static void on_about_button_clicked(GtkWidget *button, gpointer userdata)
             GTK_DIALOG_DESTROY_WITH_PARENT,
             GTK_MESSAGE_INFO,
             GTK_BUTTONS_OK,
-            "This is a tpcm policy file genertor tool.\nCopyleft@shunyou\nemail:youshun@cgprintech.com");
+            "This is a tpcm policy file genertor tool.\nCopyleft@shunyou\n"
+            "email: youshun@cgprintech.com\n"
+            "github: https://github.com/youshun22/tpcmnvgentool");
     gtk_window_set_title(GTK_WINDOW(dialog), "Information");
     gtk_dialog_run(GTK_DIALOG(dialog));
     gtk_widget_destroy(dialog);
